@@ -62,9 +62,16 @@ main {
   text-align: center;
 }
 
+#altura{
+  margin-left: 15px;
+
+
+}
+
 .input label {
   font: bold 1.5rem serif;
   font-size: 19px;
+  
 }
 
 button {

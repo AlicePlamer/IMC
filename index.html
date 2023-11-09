@@ -9,7 +9,7 @@
 </head>
 
 <body background="health-wallpaper.jpg">
-    
+
     <main>
         <div class="container">
 
@@ -19,25 +19,25 @@
                 <input type="text" id="nome">
             </div>
 
+            <div class="input" id="altura">
+                <label for="altura">Altura:</label>
+                <input placeholder="0,00cm" type="text" id="altura" oninput="formatarAltura(this)">
+                <br>
+                            </div>
 
-            <div class="input">
-                <label>Altura: 
-                    <br><div id="virgula">(Com vírgula)</div></label>
-                <input placeholder="0,00" type="number" id="altura" >
-            </div>
-
-            
             <div class="input">
                 <label>Peso:</label>
                 <input placeholder="0,00kg" type="number" id="peso">
             </div>
 
-            <button id="calcular">Calcular</button>
+            <button id="calcular" onclick="calcularIMC()">Calcular</button>
 
             <div class="result" id="resultado"></div>
 
         </div>
     </main>
+
     <script src="./script.js"></script>
 </body>
+
 </html>
